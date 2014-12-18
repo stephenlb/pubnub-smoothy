@@ -1,9 +1,13 @@
-# PubNub Smoothy Stream Chart
+# PubNub Smoothy Stream Add-on
 
 Data streamed to your screen using PubNub Data Stream Network
 and painted in smoothy.js canvas.
+[Smoothie Charts: A JavaScript Charting Library for Streaming Data](http://smoothiecharts.org/)
+can receive live updates in realtime using the Smoothy Stream library add-on.
 
 ![Stream Live Data to Smoothy.js Chart](http://stephenlb.github.io/pubnub-smoothy/smoothy-stream.gif)
+
+> Originally the need for this library was requested on [StackOverflow for Creating a line chart with smoothie graphs from a PubNub Stream](http://stackoverflow.com/questions/27511102/creating-a-line-chart-with-smoothie-graphs-from-a-pubnub-stream).
 
 ## Usage Example - Smoothy.js Data Stream Demo
 
@@ -12,7 +16,7 @@ You can receive mouse coordinates or stock prices or server cpu usage
 in realtime from a remote source anywhere on the internet.
 The following example will receive stock prices from a live
 data stream feed
-[Steraming JavaScript Market Orders](http://www.pubnub.com/developers/data-streams/market-orders)
+[Streaming JavaScript Market Orders](http://www.pubnub.com/developers/data-streams/market-orders)
 on PubNub DSN (Data Stream Network).
 
 ```html
