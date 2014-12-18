@@ -9,6 +9,9 @@ can receive live updates in realtime using the Smoothy Stream library add-on.
 
 > Originally the need for this library was requested on [StackOverflow for Creating a line chart with smoothie graphs from a PubNub Stream](http://stackoverflow.com/questions/27511102/creating-a-line-chart-with-smoothie-graphs-from-a-pubnub-stream).
 
+You should also check out the live [PubNub Smoothy Stream Add-on Live Demo](http://stephenlb.github.io/pubnub-smoothy/) to see this in action.
+But don't skip the usage example below.
+
 ## Usage Example - Smoothy.js Data Stream Demo
 
 Start a smoothy stream using a PubNub Data Channel.
