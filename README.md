@@ -3,6 +3,8 @@
 Data streamed to your screen using PubNub Data Stream Network
 and painted in smoothy.js canvas.
 
+![Stream Live Data to Smoothy.js Chart](http://stephenlb.github.io/pubnub-smoothy/smoothy-stream.gif)
+
 ## Smoothy.js Data Stream Usage Example
 
 Start a smoothy stream using a PubNub Data Channel.
