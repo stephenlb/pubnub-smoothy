@@ -32,7 +32,11 @@ var smoothstream = window.smoothstream = (function(settings){
     // Process Received Vectors
     // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     function receiver(message) {
-        stream.append( new Date().getTime(), settings.key(message) );
+        var x = settings.x || function() { return new Date().getTime() }
+        ,   y = settings.y || settings.key
+                           || function() { return Math.random() * 1000 };
+
+        stream.append( x(message), y(message) );
     }
 
     // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

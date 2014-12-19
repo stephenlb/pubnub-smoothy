@@ -2,9 +2,26 @@
 <html>
 <head>
     <title>PubNub Smoothy Stream Add-on Live Demo</title>
+    <style>
+        #pubnub-logo {
+            background: url(pubnub.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+            width: 86px;
+            height: 19px;
+            position: absolute;
+            top: 7px;
+            left: 8px;
+        }
+        .relative {
+            position: relative;
+        }
+    </style>
 </head>
 <body>
 
+<div class="relative"><div id="pubnub-logo"></div></div>
 <canvas id="chart1" width="400" height="100"></canvas>
 
 <script src="https://cdn.pubnub.com/pubnub.min.js"></script>
@@ -19,8 +36,10 @@
         channel       : "pubnub-market-orders",
         subscribe_key : "sub-c-4377ab04-f100-11e3-bffd-02ee2ddab7fe",
 
+        x             : function (message) { return new Date().getTime() },
+        y             : function (message) { return message.bid_price    },
+
         chart         : 'chart1',
-        key           : function (message) { return message.bid_price },
         strokeStyle   : 'rgba(185,230,199,1)',
         fillStyle     : 'rgba(222,238,191,0.7)',
         lineWidth     : 5
